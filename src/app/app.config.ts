@@ -1,7 +1,14 @@
-import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component'; // Asegúrate de que esta ruta sea correcta
 
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+export const appConfig = {
+  providers: [
+    provideRouter([
+      { path: '', component: HomeComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'dashboard', component: DashboardComponent } // Nueva ruta añadida
+    ])
+  ]
 };

@@ -1,79 +1,70 @@
 .login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
-}
-
-.login-box {
-  width: 100%;
   max-width: 400px;
-  text-align: center;
+  margin: 100px auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-family: Arial, sans-serif;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 32px;
+.login-title {
+  text-align: center;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 0.8rem;
 }
 
-input[type="email"],
-input[type="password"] {
-  padding: 12px;
-  border: 1px solid #ccc;
+input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .login-button {
-  padding: 12px;
-  background-color: #f25042;
+  background-color: #f55a42;
   color: white;
+  padding: 0.8rem;
   border: none;
-  border-radius: 24px;
+  border-radius: 999px;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-.extra-options {
-  font-size: 13px;
+.login-button:hover {
+  background-color: #e14b35;
+}
+
+.login-links {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  color: #8a4f4f;
-  margin-top: 12px;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
 }
 
-.extra-options a {
+.login-links a {
+  color: #7a6b6b;
   text-decoration: none;
-  color: inherit;
 }
 
-.extra-options span {
-  text-decoration: underline;
-}
-
-.google-button {
-  margin-top: 20px;
-  background-color: #f4f1ee;
-  padding: 12px;
-  border: none;
-  border-radius: 24px;
+.google-login {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
   display: flex;
   align-items: center;
+  gap: 0.6rem;
   justify-content: center;
-  gap: 8px;
-  font-weight: bold;
+  background-color: #f8f6f6;
+  font-weight: 500;
   cursor: pointer;
-}
-
-.google-button img {
-  width: 20px;
-  height: 20px;
 }
