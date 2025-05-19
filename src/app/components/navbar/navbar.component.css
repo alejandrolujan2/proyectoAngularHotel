@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff7f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f87171;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar__links a:hover {
+  color: #f87171;
+}
+
+.navbar__publish-button {
+  background-color: #f87171;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.95rem;.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff7f6;
+    border-bottom: 1px solid #eee;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .navbar__logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #f87171;
+  }
+  
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 0.95rem;
+  }
+  
+  .navbar__links a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar__links a:hover {
+    background-color: rgba(248, 113, 113, 0.1);
+    color: #f87171;
+  }
+  
+  .navbar__links a.active {
+    font-weight: 600;
+    color: #f87171;
+    background-color: white;
+    border: 1px solid #f87171;
+  }
+  
+  .navbar__publish-button {
+    background-color: #f87171;
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .navbar__publish-button:hover {
+    background-color: #e66060;
+  }
+  
+  .navbar__icon {
+    margin-left: 0.8rem;
+    font-size: 1.3rem;
+  }
+  
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar__publish-button:hover {
+  background-color: #e66060;
+}
+
+.navbar__icon {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar__links a.active {
+  font-weight: 600;
+  color: #f87171;
+  background-color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+}

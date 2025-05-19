@@ -18,14 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   template: `
-    <nav>
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a> |
-      <a routerLink="/login" routerLinkActive="active">Login</a>
-      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> 
-      <a routerLink="/register" routerLinkActive="active">Register</a>
-      <a routerLink="/search" routerLinkActive="active">Search</a>
-      <a routerLink="/profile" routerLinkActive="active">Profile</a>
-    </nav>
+    <app-navbar></app-navbar>
 
     <router-outlet></router-outlet>
 

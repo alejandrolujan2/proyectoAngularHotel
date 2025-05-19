@@ -1,23 +1,43 @@
+/* HERO IMAGE SECTION */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1501117716987-c8e1ecb210d9'); /* Usá una imagen similar a la del mockup */
+  background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D');
   background-size: cover;
   background-position: center;
-  padding: 100px 20px;
+  padding: 160px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px 30px;
+  border-radius: 16px;
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4); /* sombreado para mejor legibilidad */
-  padding: 40px;
-  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Título principal */
 .banner-content h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
   margin-bottom: 20px;
+}
+
+/* POPULAR HOTELS SECTION */
+.popular-hotels {
+  padding: 60px 20px;
+}
+
+.popular-hotels h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
 }

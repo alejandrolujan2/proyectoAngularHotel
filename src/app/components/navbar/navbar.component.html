@@ -1,19 +1,15 @@
-<nav style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <!-- Logo -->
-  <div style="font-size: 1.5rem; font-weight: bold; color: #f87171;">Photel</div>
+<nav class="navbar">
+  <div class="navbar__logo">Photel</div>
 
-  <!-- Links -->
-  <div style="display: flex; align-items: center; gap: 1.5rem; font-size: 1rem;">
-    <a href="#" style="text-decoration: none; color: #333;">Buscar</a>
-    <a href="#" style="text-decoration: none; color: #333;">Iniciar sesión</a>
-    <a href="#" style="text-decoration: none; color: #333;">Registrarse</a>
+  <div class="navbar__links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    <a routerLink="/register" routerLinkActive="active">Register</a>
+    <a routerLink="/search" routerLinkActive="active">Search</a>
+    <a routerLink="/profile" routerLinkActive="active">Profile</a>
 
-    <!-- Botón de publicar -->
-    <button style="background-color: #f87171; border: none; color: white; padding: 0.5rem 1rem; border-radius: 9999px; cursor: pointer;">
-      Publicar
-    </button>
-
-    <!-- Icono (placeholder) -->
-    <div style="margin-left: 1rem; font-size: 1.5rem;">🌐</div>
+    <button class="navbar__publish-button">Publicar</button>
+    <div class="navbar__icon">🌐</div>
   </div>
 </nav>
