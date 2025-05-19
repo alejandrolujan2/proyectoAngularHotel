@@ -5,6 +5,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -20,7 +21,10 @@ import { FooterComponent } from './components/footer/footer.component';
     <nav>
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a> |
       <a routerLink="/login" routerLinkActive="active">Login</a>
-      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> <!-- link nuevo -->
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> 
+      <a routerLink="/register" routerLinkActive="active">Register</a>
+      <a routerLink="/search" routerLinkActive="active">Search</a>
+      <a routerLink="/profile" routerLinkActive="active">Profile</a>
     </nav>
 
     <router-outlet></router-outlet>

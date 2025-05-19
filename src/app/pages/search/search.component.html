@@ -1,0 +1,37 @@
+<div class="search-page">
+  <header class="header">
+    <div class="logo">LuxStay</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Search</a>
+      <button class="btn-register">Register</button>
+      <button class="btn-login">Log in</button>
+    </nav>
+  </header>
+
+  <section class="search-box">
+    <h2>Find your perfect stay</h2>
+    <div class="form-fields">
+      <input type="text" placeholder="Location" />
+      <input type="text" placeholder="Check in – Check out" />
+      <div class="guests">
+        <span>Guests: 1</span>
+      </div>
+      <button class="btn-search">Search</button>
+    </div>
+  </section>
+
+  <section class="results">
+    <h3>Your search results</h3>
+    <p>123 stays</p>
+
+    <div class="result-item" *ngFor="let item of [1,2,3]">
+      <img src="https://via.placeholder.com/64" alt="Stay" />
+      <div class="info">
+        <p class="title">Entire rental unit</p>
+        <p class="subtitle">4.5 (123 reviews) · Superhost</p>
+      </div>
+      <div class="price">$175</div>
+    </div>
+  </section>
+</div>
