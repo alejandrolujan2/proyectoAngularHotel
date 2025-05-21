@@ -1,0 +1,74 @@
+<div class="hotel-details">
+  <header class="main-image">
+    <h1>Beachfront Resort</h1>
+    <p>4.5 (2,300 reviews) · 5-star hotel</p>
+  </header>
+
+  <!-- Galería -->
+  <div class="gallery">
+    <img src="assets/main.jpg" alt="Main hotel image" />
+    <img src="assets/side1.jpg" alt="Side image 1" />
+    <img src="assets/side2.jpg" alt="Side image 2" />
+    <img src="assets/side3.jpg" alt="Side image 3" />
+    <img src="assets/side4.jpg" alt="Side image 4" />
+  </div>
+
+  <!-- Servicios -->
+  <section class="services">
+    <h2>Services</h2>
+    <div class="service-list">
+      <label *ngFor="let service of services">
+        <input type="checkbox" [(ngModel)]="service.selected" />
+        {{ service.label }}
+      </label>
+    </div>
+  </section>
+
+  <!-- Habitaciones -->
+  <section class="rooms">
+    <h2>Rooms</h2>
+    <div class="room">
+      <h3>Deluxe room</h3>
+      <p><strong>$200/night</strong></p>
+      <p>2 guests · 1 bed · 1 private bath</p>
+      <button>Select</button>
+    </div>
+    <div class="room">
+      <h3>Suite</h3>
+      <p><strong>$300/night</strong></p>
+      <p>4 guests · 2 beds · 1 private bath</p>
+      <button>Select</button>
+    </div>
+  </section>
+
+  <!-- Calendario -->
+  <section class="calendar">
+    <h2>When do you want to stay?</h2>
+    <input type="date" />
+    <input type="date" />
+    <button class="book-btn">Book now</button>
+  </section>
+
+  <h2>Reviews</h2>
+  <div class="review-summary">
+    <p class="score">4.5</p>
+    <p>2,300 reviews</p>
+  </div>
+
+  <div class="review">
+    <strong>Mark Johnson</strong>
+    <p>★★★★★</p>
+    <p>We had an amazing time! The amenities were top-notch, the staff was friendly...</p>
+  </div>
+
+  <div class="review">
+    <strong>Lindsay Smith</strong>
+    <p>★★★★☆</p>
+    <p>The view was breathtaking. However, the pool service was slow...</p>
+  </div>
+
+  <div class="review-actions">
+    <button>Load more</button>
+    <button>Write a review</button>
+  </div>
+</div>

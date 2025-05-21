@@ -1,0 +1,116 @@
+.hotel-details {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-image {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 150px;
+}
+
+.services {
+  margin-bottom: 2rem;
+}
+
+.services h2 {
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-list label {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.rooms {
+  margin-bottom: 2rem;
+}
+
+.room {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.room button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.calendar {
+  margin-bottom: 2rem;
+}
+
+.calendar input[type='date'] {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+.book-btn {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.reviews {
+  margin-top: 2rem;
+}
+
+.rating {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.review {
+  margin-bottom: 1.5rem;
+}
+
+.review-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.review-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.write-review {
+  background-color: #ff5a5f;
+  color: white;
+}

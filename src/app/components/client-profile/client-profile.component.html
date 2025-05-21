@@ -1,0 +1,45 @@
+<div class="profile-container">
+  <header class="profile-header">
+    <img src="https://i.pravatar.cc/150?img=9" alt="Profile" class="profile-pic">
+    <div class="user-info">
+      <h2>Emily</h2>
+      <p>emilygmail.com</p>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button [class.active]="activeTab === 'active'" (click)="switchTab('active')">Active</button>
+    <button [class.active]="activeTab === 'past'" (click)="switchTab('past')">Past</button>
+  </div>
+
+<ng-container *ngIf="activeTab === 'active'">
+  <div class="reservation-card" *ngFor="let hotel of [1,2,3]">
+    <div class="text">
+      <p class="check-in">Check-in: July 29, 2023 – Check-out: August 5, 2023</p>
+      <h3>The Beverly Hilton</h3>
+      <p class="location">Los Angeles, CA</p>
+      <button class="details-btn">Details</button>
+    </div>
+    <img src="https://source.unsplash.com/random/150x100?hotel&{{hotel}}" alt="Hotel" class="hotel-img">
+  </div>
+</ng-container>
+
+<ng-container *ngIf="activeTab === 'past'">
+  <div class="reservation-card" *ngFor="let hotel of [1,2,3,4]">
+    <div class="text">
+      <p class="check-in">Check-in: May 20, 2023 – Check-out: May 25, 2023</p>
+      <h3>Hilton San Francisco Union Square</h3>
+      <p class="location">San Francisco, CA</p>
+      <button class="details-btn">Details</button>
+    </div>
+    <img src="https://source.unsplash.com/random/150x100?building&{{hotel}}" alt="Hotel" class="hotel-img">
+  </div>
+</ng-container>
+
+
+  <div class="profile-buttons">
+    <button>Edit Profile</button>
+    <button>Change Password</button>
+    <button>Add Reviews</button>
+  </div>
+</div>
